@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,92 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
     <main class="main">
         <header class="header"></header>
-        <section class="forms"></section>
+        <form action="https://dev.cotenfrontend.pl" method="POST" class="form">
+            <p>
+                <label for="name">Your name:</label>
+                <input required type="text" placeholder="please enter your name" name="name" id="name">
+            </p>
+            <p>
+                <label for="surname">Your surname:<br>
+                    <input type="text" value="Gardo" name="surname" id="surname">
+                </label>
+            </p>
+            <p>
+                <label for="age">Age:<br>
+                    <input type="number" value="30" name="age" id="age">
+                </label>
+            </p>
+            <p>
+                <label for="telephone">Phone number:<br>
+                    <input type="tel" name="telephone" id="telephone">
+                </label>
+            </p>
+            <p>
+                <label for="email">Email address:<br>
+                    <input type="email" name="email" id="email">
+                </label>
+            </p>
+            <fieldset>
+                <legend>My inputs</legend>
+                <p>
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio1">Option 1</label>
+                </p>
+                <p>
+                    <input type="radio" checked value="option2" name="radio" id="radio2">
+                    <label for="radio2">Option 2</label>
+                </p>
+                <p>
+                    <input type="radio" name="radio" id="radio3">
+                    <label for="radio3">Option 3</label>
+                </p>
+                <p>
+                    <input type="radio" name="radio" id="radio4">
+                    <label for="radio4">Option 4</label>
+                </p>
+
+            </fieldset>
+            <p>
+                <input type="checkbox" checked value="ruby" name="mycheckbox" id="mycheckbox1">
+                <label for="mycheckbox1">Check 1</label>
+            </p>
+            <p>
+                <input type="checkbox" name="mycheckbox" id="mycheckbox2">
+                <label for="mycheckbox2">Check 2</label>
+            </p>
+            <p>
+                <label for="range">Range</label><br>
+                <input type="range" min="0" max="100" step="10" value="60" name="range" id="range">
+            </p>
+            <p>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <label for="file">Your avatar</label><br>
+                <input type="file" name="file" id="file">
+            </p>
+            <p>
+                <label for="select">Please select the answer</label><br>
+                <select name="select" id="select">
+                    <option value="user selected yes">Yes</option>
+                    <option value="user selected no">No</option>
+                    <option value="user selected I don't know">I don't know</option>
+                </select>
+            </p>
+            <p>
+                <label for="textarea">Please describe your day</label><br>
+                <textarea id="textarea" name="textarea">lorem ipsum</textarea>
+            </p>
+
+            <input type="submit" value="Send the form">
+
+        </form>
     </main>
 </body>
+
 </html>

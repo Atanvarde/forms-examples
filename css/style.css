@@ -5,3 +5,18 @@ html {
 *, *after, *:before {
     box-sizing: inherit;
 }
+
+body {
+    background: #5c7986;
+    color: #FFEB3B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.form {
+    max-width: 600px;
+    width: 100%;
+}
